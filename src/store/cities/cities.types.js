@@ -1,0 +1,9 @@
+const CitiesActionTypes = {
+	ADD_CITY: 'ADD_CITY',
+	REMOVE_CITY: 'REMOVE_CITY',
+	CLEAR_ALL_CITY: 'CLEAR_ALL_CITY',
+	SET_CURRENT_CITY: 'SET_CURRENT_CITY',
+	DELETE_CURRENT_CITY: 'DELETE_CURRENT_CITY'
+};
+
+export default CitiesActionTypes;

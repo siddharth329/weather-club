@@ -1,0 +1,102 @@
+.nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 8rem;
+	width: 100vw;
+	background-color: #ffffff;
+	padding: 1rem;
+	z-index: 1000;
+
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+	box-shadow: 0 4px 10px rgba(#000, .1);
+
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 1rem;
+	align-items: center;
+	justify-items: center;
+
+	&__home {
+		svg {
+			fill: lightgrey;
+			height: 4.5rem;
+			width: 4.5rem;
+		}
+
+		&.nav__active {
+			svg {
+				fill: gray;
+			}
+		}
+	}
+
+	&__search {
+		svg {
+			stroke: lightgray;
+			fill: none;
+			height: 4rem;
+			width: 4rem;
+		}
+
+		&.nav__active {
+			svg {
+				stroke: gray;
+			}
+		}
+	}
+
+	&__weather {
+		padding-top: 1.5rem;
+		padding-left: .5rem;
+
+		svg {
+			stroke: lightgray;
+			height: 5.5rem;
+			width: 4rem;
+			fill: lightgray;
+
+			display: flex;
+			justify-content: center;
+		}
+
+		&.nav__active {
+			svg {
+				fill: gray;
+			}
+		}
+	}
+
+	&__settings {
+		svg {
+			stroke: lightgray;
+			height: 3.3rem;
+			width: 3.3rem;
+			fill: lightgray;
+		}
+
+		&.nav__active {
+			svg {
+				fill: gray;
+			}
+		}
+	}
+
+	&__about {
+		svg {
+			// stroke: lightgray;
+			height: 4rem;
+			width: 4rem;
+			fill: lightgray;
+		}
+
+		&.nav__active {
+			svg {
+				fill: gray;
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.weather-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 2.5rem;
+	margin-bottom: 8.5rem;
+	height: calc(100vh);
+
+	&__title {
+		margin: 0 auto;
+		font-size: 2rem;
+		display: block;
+		color: #fff;
+	}
+
+	&.day {
+		background-image: url(https://weather-club-backend.herokuapp.com/images/day.jpg);
+		background-size: cover;
+		background-position: fixed;
+	}
+	&.night {
+		background-image: url(https://weather-club-backend.herokuapp.com/images/night.jpg);
+		background-size: cover;
+	}
+
+	&__btn {
+		border: none;
+		outline: none;
+		border-radius: 10px;
+		padding: 2rem 4rem;
+		background-color: #fff;
+		margin: 1.5rem 0;
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: gray;
+		font-family: 'Poppins', sans-serif;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all .1s;
+
+		&:active {
+			color: #fff;
+			background-color: lightgray;
+		}
+
+		&:disabled {
+			background-color: gray;
+			color: white;
+		}
+	}
+}

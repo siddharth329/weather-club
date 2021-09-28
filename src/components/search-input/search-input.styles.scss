@@ -1,0 +1,19 @@
+.search-input {
+	display: flex;
+	justify-content: center;
+	margin-top: 2.5rem;
+
+	&__input {
+		width: 95%;
+		border: 1px solid rgba(#000, .15);
+		outline: none;
+		padding: 1.5rem 2.5rem;
+		border-radius: 100rem;
+		font-size: 1.8rem;
+
+		&::placeholder {
+			font-size: 1.5rem;
+			color: lightgray;
+		}
+	}
+}
